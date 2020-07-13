@@ -1,0 +1,32 @@
+<!-- <Write a Javascript program to get the current date :
+    Excepted output:
+    mm-dd-yyyy,mm/dd/yyyy or
+    dd-mm-yyyy,dd/mm/yyyy
+    > -->
+<html>
+    <head>
+        <h1>Assignment No3</h1>
+
+        
+    </head>
+    <body>
+        <p id="dt"></p>
+        <script>
+            var td = new Date();
+            var dd=td.getDate();
+            var mm=td.getMonth()+1;
+            var yy=td.getFullYear();
+
+            if(dd<10){
+                dd='0'+dd;
+            }
+            if(mm<10){
+                mm = '0' + mm ;
+            }
+            document.getElementById("dt").innerHTML=dd+"/"+mm+"/"+yy;
+
+        </script>
+
+        </body>
+
+</html>
